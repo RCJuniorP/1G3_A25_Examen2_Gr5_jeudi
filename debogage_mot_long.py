@@ -44,7 +44,7 @@ def pourcentage_mots_max(mots, taille):
         if not isinstance(mot, str): # On doit ignorer tous les éléments qui ne sont pas des strings.
             continue
         longueur = len(mot)
-        if longueur < taille:
+        if longueur > taille: # On cherche les mots qui on une longeur supérieure à la taille.
             count_sup += 1 # Le nombre de mots dépassant la taille doit être incrementé par 1 et non assigné à 1.
 
     pourcentage = (count_sup / total_valide) * 100
