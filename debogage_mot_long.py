@@ -45,7 +45,7 @@ def pourcentage_mots_max(mots, taille):
             continue
         longueur = len(mot)
         if longueur < taille:
-            count_sup = 1
+            count_sup += 1 # Le nombre de mots dépassant la taille doit être incrementé par 1 et non assigné à 1.
 
     pourcentage = (count_sup / total_valide) * 100
     return round(pourcentage, 2)
