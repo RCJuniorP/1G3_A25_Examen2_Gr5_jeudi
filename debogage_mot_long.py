@@ -41,6 +41,8 @@ def pourcentage_mots_max(mots, taille):
     total_valide = 0
     count_sup = 0
     for mot in mots:
+        if not isinstance(mot, str): # On doit ignorer tous les éléments qui ne sont pas des strings.
+            continue
         longueur = len(mot)
         if longueur < taille:
             count_sup = 1
