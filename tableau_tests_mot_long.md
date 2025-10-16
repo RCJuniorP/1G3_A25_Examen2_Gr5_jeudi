@@ -3,15 +3,13 @@
 - Créer au plan de tests contenant au moins 5 cas de tests **DIFFÉRENTS/VARIÉS**.
 - Créer les tests unitaires pour tous les cas de tests.
 
-|                                 |           |                           |
-|---------------------------------|-----------|---------------------------|
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
-|                                 |           |                           |
+|            **mots**             | **Résultat attendu** |                         **Remarques additionnelles**                         |
+|:-------------------------------:|:--------------------:|:----------------------------------------------------------------------------:|
+|            "bientôt"            |         None         | Ce test échoue pour des raisons techniques (voir test_debogage_mot_long.py). |
+| ["finale", "bonjour", "vendre"] |      "bonjour"       |                                      -                                       |
+|      ["faim", (1,2,3,4,5)]      |        "faim"        | Ce test échoue pour des raisons techniques (voir test_debogage_mot_long.py). |
+|               []                |         None         |                                      -                                       |
+|   ["son", "donner", "berger"]   |       "donner"       |                                      -                                       |
 
 # Tests unitaires pour la fonction _pourcentage_mots_max_
 | **mots**                                     | **taille** | **Résultat attendu** | **Remarque ou Message affiché**                                      |
