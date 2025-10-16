@@ -36,8 +36,6 @@ def pourcentage_mots_max(mots, taille):
         print(f"Impossible de calculer le pourcentage. '{mots}' n'est pas une liste.")
         return None
 
-    # TODO: Corriger les bogues dans le code suivant les erreurs relevées par les tests unitaires de cette fonction.
-    #       Indice : chaque mot valide mérite d’être compté, et seuls ceux qui sont suffisamment grands font grimper ton pourcentage !
     total_valide = 0
     count_sup = 0
     for mot in mots:
